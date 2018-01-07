@@ -18,6 +18,12 @@
     line-height: 25px;
   }
 }
+
+.contact-me a {
+  color: $white;
+  opacity: 0.85;
+  text-decoration: none;
+}
 .footer-links {
   display: flex;
   align-items: center;
