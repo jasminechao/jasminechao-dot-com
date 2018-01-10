@@ -1,0 +1,1 @@
+var items=["Fullstack Developer","Frontend Developer","Ruby on Rails","PHP Developer","Web Designer"];setInterval(function(){var e=items[Math.floor(Math.random()*items.length)];$("#scrolling_titles").text(e)},2e3);
