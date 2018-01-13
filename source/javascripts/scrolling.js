@@ -5,21 +5,21 @@
 //   $("#scrolling_titles").text(title);
 // }, 2000);
 
-// setInterval(function(){
-//   for (var i = 0; i < items.length; i++) {
-//     $("#scrolling_titles").text(items[i]);
-//   }
-// }, 2000);
+
 
 function delayLoop(delay, titles) {
   var time = 2000;
 
   $(titles).each(function(k, $this) {
-      setTimeout(function()
-      {
-          $("#scrolling_titles").html($this);
-      }, time)
-      time += delay;
+    setTimeout(function()
+    {
+      $("#scrolling_titles").html($this);
+    }, time)
+    time += delay;
   });
+  setTimeout(function() {
+    delayLoop(2000, titles)
+  }, 10000);
 }
-delayLoop(2000, ["Fullstack Developer","Frontend Developer", "Ruby on Rails", "PHP Developer", "Web Designer"]);
+delayLoop(2000, ["Fullstack Developer","Frontend Developer", "Ruby on Rails", "Web Designer", "PHP Developer"]);
+
