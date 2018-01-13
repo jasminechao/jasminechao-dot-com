@@ -1,0 +1,1 @@
+function delayLoop(e,o){var l=2e3;$(o).each(function(o,n){setTimeout(function(){$("#scrolling_titles").html(n)},l),l+=e}),setTimeout(function(){delayLoop(2e3,o)},1e4)}delayLoop(2e3,["Fullstack Developer","Frontend Developer","Ruby on Rails","Web Designer","PHP Developer"]);
